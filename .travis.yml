@@ -12,6 +12,8 @@ stages:
     cleanup
 
 before_install:
+ - git branch
+ - git describe
  - make -C modules init
 
 script:
